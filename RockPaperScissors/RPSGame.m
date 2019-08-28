@@ -10,7 +10,8 @@
 
 @implementation RPSGame
 
--(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn secondTurn: (RPSTurn*)computerTurn {
+-(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn
+                      secondTurn: (RPSTurn*)computerTurn {
     self = [super init];
     
     if(self) {

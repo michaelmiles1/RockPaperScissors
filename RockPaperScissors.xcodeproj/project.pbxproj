@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2EE5002315EF87006CDE08 /* RPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2EE4FF2315EF87006CDE08 /* RPSController.m */; };
 		5CD1F90C2303A45400DDC4D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1F90B2303A45400DDC4D6 /* main.m */; };
 		5CD1F9142303A5F400DDC4D6 /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1F9132303A5F400DDC4D6 /* RPSGame.m */; };
 		5CD1F9172303A60D00DDC4D6 /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1F9162303A60D00DDC4D6 /* RPSTurn.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C2EE4FE2315EF87006CDE08 /* RPSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSController.h; sourceTree = "<group>"; };
+		5C2EE4FF2315EF87006CDE08 /* RPSController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSController.m; sourceTree = "<group>"; };
 		5CD1F9082303A45400DDC4D6 /* RockPaperScissors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RockPaperScissors; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD1F90B2303A45400DDC4D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CD1F9122303A5F400DDC4D6 /* RPSGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				5CD1F90B2303A45400DDC4D6 /* main.m */,
 				5CD1F9122303A5F400DDC4D6 /* RPSGame.h */,
 				5CD1F9132303A5F400DDC4D6 /* RPSGame.m */,
+				5C2EE4FE2315EF87006CDE08 /* RPSController.h */,
+				5C2EE4FF2315EF87006CDE08 /* RPSController.m */,
 				5CD1F9152303A60D00DDC4D6 /* RPSTurn.h */,
 				5CD1F9162303A60D00DDC4D6 /* RPSTurn.m */,
 			);
@@ -131,6 +136,7 @@
 				5CD1F90C2303A45400DDC4D6 /* main.m in Sources */,
 				5CD1F9142303A5F400DDC4D6 /* RPSGame.m in Sources */,
 				5CD1F9172303A60D00DDC4D6 /* RPSTurn.m in Sources */,
+				5C2EE5002315EF87006CDE08 /* RPSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
