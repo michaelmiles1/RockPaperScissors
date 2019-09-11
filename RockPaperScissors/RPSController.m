@@ -21,4 +21,12 @@
                                         secondTurn:computersTurn];
 }
 
+-(NSString*)resultsString:(RPSGame*)game {
+    return [game.firstTurn defeats:game.secondTurn] ? @"You win!" : @"You lose.";
+}
+
+-(NSString*)messageForGame:(RPSGame*)game {
+    
+}
+
 @end

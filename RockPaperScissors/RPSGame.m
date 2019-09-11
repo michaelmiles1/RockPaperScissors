@@ -22,4 +22,14 @@
     return self;
 }
 
+-(RPSTurn*)winner {
+    //ternary operators also work in obj-c
+    return [self.firstTurn defeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
+}
+
+
+-(RPSTurn*)loser {
+    return [self.firstTurn defeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
+}
+
 @end
