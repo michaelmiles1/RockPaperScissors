@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPSController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        //Initialize RPSController
+        RPSController *gameController = [[RPSController alloc] init];
+        
+        [gameController throwDown:Rock];
     }
     return 0;
 }
