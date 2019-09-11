@@ -26,6 +26,17 @@
 }
 
 -(NSString*)messageForGame:(RPSGame*)game {
+    if (game.firstTurn.move == game.secondTurn.move) {
+        return @"It's a tie.";
+    } else {
+        NSString *winnerString = [[game winner] description];
+        NSString *loserString = [[game loser] description];
+        NSString *resultString = [self resultsString:game];
+        
+        NSString *wholeString = [NSString stringWithFormat:@"%@ defeats %@. %@", winnerString, loserString, resultString];
+        
+        return wholeString;
+    }
     
 }
 

@@ -15,6 +15,11 @@ int main(int argc, const char * argv[]) {
         RPSController *gameController = [[RPSController alloc] init];
         
         [gameController throwDown:Rock];
+        
+        NSString *resultsMessage = [gameController messageForGame:gameController.game];
+        
+        //This is how to interpolate strings in OBJC
+        NSLog(@"%@", resultsMessage);
     }
     return 0;
 }
