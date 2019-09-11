@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, Move) {
 @property (nonatomic) Move move;
 
 -(instancetype)initWithMove:(Move)move;
--(BOOL)defeats:(RPSTurn*)turn;
+-(BOOL)defeats:(RPSTurn*)opponent;
 -(Move)generateMove;
+-(NSString*)description;
 
 @end

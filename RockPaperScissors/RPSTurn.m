@@ -51,8 +51,27 @@
     return Rock;
 }
 
--(BOOL)defeats:(RPSTurn*)turn {
-    return false;
+-(BOOL)defeats:(RPSTurn*)opponent {
+    if ((self.move == Paper && opponent.move == Rock) ||
+        (self.move == Scissors && opponent.move == Paper) ||
+        (self.move == Rock && opponent.move == Scissors))
+    {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+-(NSString*)description {
+    if (self.move == Paper) {
+        return @"Paper";
+    } else if (self.move == Rock) {
+        return @"Rock";
+    } else if (self.move == Scissors) {
+        return @"Scissors";
+    } else {
+        return @"Description method failed";
+    }
 }
 
 @end
